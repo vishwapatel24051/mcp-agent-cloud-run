@@ -1,0 +1,32 @@
+{
+  "filesystem": {
+    "transport": "stdio",
+    "command": "${APP_DIR}/node_modules/.bin/mcp-server-filesystem",
+    "args": [
+      "${WORKSPACE_DIR}"
+    ]
+  },
+  "tavily": {
+    "transport": "stdio",
+    "command": "${APP_DIR}/node_modules/.bin/tavily-mcp",
+    "args": [],
+    "env": {
+      "TAVILY_API_KEY": "${TAVILY_API_KEY}"
+    }
+  },
+  "fetch": {
+    "transport": "stdio",
+    "command": "${PYTHON}",
+    "args": [
+      "-m",
+      "mcp_server_fetch"
+    ]
+  },
+  "utilities": {
+    "transport": "stdio",
+    "command": "${PYTHON}",
+    "args": [
+      "${APP_DIR}/utils_server.py"
+    ]
+  }
+}

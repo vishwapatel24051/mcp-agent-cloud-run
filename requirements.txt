@@ -1,0 +1,11 @@
+fastapi==0.143.0
+uvicorn==0.54.0
+python-dotenv==1.2.4
+langgraph==1.2.14
+langchain-core==1.6.9
+langchain-openai==1.7.0
+langchain-mcp-adapters==0.3.2
+mcp==1.30.0
+openai==3.28.0
+mcp-server-fetch==2026.8.18
+tzdata==2026.5

@@ -1,0 +1,9 @@
+{
+  "name": "csci599-a1-mcp-servers",
+  "private": true,
+  "description": "Node-based MCP servers launched by the agent over stdio",
+  "dependencies": {
+    "@modelcontextprotocol/server-filesystem": "2026.8.31",
+    "tavily-mcp": "0.2.22"
+  }
+}
